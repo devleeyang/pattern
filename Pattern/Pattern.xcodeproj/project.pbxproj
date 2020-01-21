@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		251329C623D6BA0000582564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2513299F23D6B6CC00582564 /* Assets.xcassets */; };
 		251329C723D6BADD00582564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2513299C23D6B6CB00582564 /* Main.storyboard */; };
 		251329C823D6BAE000582564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251329A123D6B6CC00582564 /* LaunchScreen.storyboard */; };
+		255B4D6623D6E6FD00E1F9A9 /* MVVMLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255B4D6523D6E6FD00E1F9A9 /* MVVMLoginViewController.swift */; };
 		25CDE26123D6BCD700022430 /* LeeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDE25B23D6BCD700022430 /* LeeButton.swift */; };
 		25CDE26223D6BCD700022430 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDE25D23D6BCD700022430 /* MainViewController.swift */; };
 		25CDE26323D6BCD700022430 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDE25E23D6BCD700022430 /* LoginViewController.swift */; };
@@ -56,6 +57,7 @@
 		251329B423D6B6CC00582564 /* PatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		251329B823D6B6CC00582564 /* PatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternUITests.swift; sourceTree = "<group>"; };
 		251329BA23D6B6CC00582564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255B4D6523D6E6FD00E1F9A9 /* MVVMLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMLoginViewController.swift; sourceTree = "<group>"; };
 		25CDE25B23D6BCD700022430 /* LeeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeeButton.swift; sourceTree = "<group>"; };
 		25CDE25D23D6BCD700022430 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		25CDE25E23D6BCD700022430 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +111,6 @@
 				9F195271E362C2F270FD3FD5 /* Pods-PatternTests.debug.xcconfig */,
 				7C9CE8D93A2A6D50BE319FE1 /* Pods-PatternTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,6 +139,7 @@
 		2513299523D6B6CB00582564 /* Pattern */ = {
 			isa = PBXGroup;
 			children = (
+				255B4D6323D6E6DA00E1F9A9 /* MVVM */,
 				25CDE25F23D6BCD700022430 /* Model */,
 				25CDE25A23D6BCD700022430 /* View */,
 				25CDE25C23D6BCD700022430 /* ViewController */,
@@ -168,6 +170,22 @@
 				251329BA23D6B6CC00582564 /* Info.plist */,
 			);
 			path = PatternUITests;
+			sourceTree = "<group>";
+		};
+		255B4D6323D6E6DA00E1F9A9 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				255B4D6423D6E6E800E1F9A9 /* View */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		255B4D6423D6E6E800E1F9A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				255B4D6523D6E6FD00E1F9A9 /* MVVMLoginViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		25CDE25A23D6BCD700022430 /* View */ = {
@@ -468,6 +486,7 @@
 				2513299723D6B6CB00582564 /* AppDelegate.swift in Sources */,
 				2513299923D6B6CB00582564 /* SceneDelegate.swift in Sources */,
 				25CDE26223D6BCD700022430 /* MainViewController.swift in Sources */,
+				255B4D6623D6E6FD00E1F9A9 /* MVVMLoginViewController.swift in Sources */,
 				25CDE26423D6BCD700022430 /* LoginInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
