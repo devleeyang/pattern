@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bDp-Wo-ccJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1qO-sS-5CI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -161,6 +161,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8k-UM-cBd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="170" y="852"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Vv9-zN-XY8">
+            <objects>
+                <viewController storyboardIdentifier="MVPLoginViewController" id="1qO-sS-5CI" customClass="MVPLoginViewController" customModule="Pattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TCB-35-E2w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oE7-a1-fGg">
+                                <rect key="frame" x="20" y="144" width="374" height="76"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BzS-wn-dLv">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="1qO-sS-5CI" id="520-VG-j4m"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXV-cb-4Ak">
+                                        <rect key="frame" x="0.0" y="42" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="1qO-sS-5CI" id="vXF-Fd-GZj"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nG0-nX-RnI" customClass="LeeButton" customModule="DesignPattern">
+                                <rect key="frame" x="184" y="317" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressedLogin:" destination="1qO-sS-5CI" eventType="touchUpInside" id="pbN-Oj-aIw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oE7-a1-fGg" firstAttribute="top" secondItem="INx-pw-3Rh" secondAttribute="top" constant="100" id="0CH-2q-hNB"/>
+                            <constraint firstItem="INx-pw-3Rh" firstAttribute="trailing" secondItem="oE7-a1-fGg" secondAttribute="trailing" constant="20" id="9JO-yG-7FR"/>
+                            <constraint firstItem="oE7-a1-fGg" firstAttribute="leading" secondItem="INx-pw-3Rh" secondAttribute="leading" constant="20" id="fU8-Y4-djR"/>
+                            <constraint firstItem="nG0-nX-RnI" firstAttribute="top" secondItem="oE7-a1-fGg" secondAttribute="bottom" constant="97" id="qmx-d2-Sg4"/>
+                            <constraint firstItem="nG0-nX-RnI" firstAttribute="centerX" secondItem="oE7-a1-fGg" secondAttribute="centerX" id="w1K-rz-kPp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="INx-pw-3Rh"/>
+                    </view>
+                    <connections>
+                        <outlet property="idTextField" destination="BzS-wn-dLv" id="avy-Gi-FmE"/>
+                        <outlet property="lgoinButton" destination="nG0-nX-RnI" id="goW-IZ-pHv"/>
+                        <outlet property="passwordTextField" destination="VXV-cb-4Ak" id="rSb-QH-G3I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOq-xN-lF0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="1512"/>
         </scene>
     </scenes>
 </document>
