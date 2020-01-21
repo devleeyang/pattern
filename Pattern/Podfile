@@ -7,16 +7,19 @@ target 'Pattern' do
 
   # Pods for Pattern
   pod 'RxSwift', '~> 5.0'
+  pod 'RxCocoa', '~> 5.0'
 
   target 'PatternTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'RxSwift', '~> 5.0'
+    pod 'RxCocoa', '~> 5.0'
   end
 
   target 'PatternUITests' do
     # Pods for testing
     pod 'RxSwift', '~> 5.0'
+    pod 'RxCocoa', '~> 5.0'
   end
 
 end
